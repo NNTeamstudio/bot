@@ -1,3 +1,100 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, rgb(19, 17, 17) 0%, rgb(34, 34, 34) 100%);
+}
+
+header {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: red;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 15px;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    background: linear-gradient(90deg, #aa008e 0%, rgb(255, 31, 255) 100%);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content img {
+    width: 550px;
+    margin-top: 100px;
+    border-radius: 30px;
+}
+
+.content {
+    padding: 150px 50px 0px 0px;
+}
+
+.content h1 {
+    color: aqua;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.content p {
+    font-weight: 600;
     margin-top: 25px;
     color: white;
     font-size: 20px;
@@ -391,7 +488,8 @@ label {
         flex-direction: column;
         padding: 30px 30px 0px 30px;
     }
-.guia {
+
+    .guia {
         margin-bottom: 30px;
     }
 
@@ -469,7 +567,9 @@ label {
         width: 350px;
         height: 800px;
         margin-top: 50px;
-.info {
+    }
+
+    .info {
         display: none;
     }
 
@@ -542,4 +642,4 @@ redes a:hover{
         padding: 10px 0;
     }
     }
-    
+        
