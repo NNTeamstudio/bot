@@ -42,7 +42,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
 
     const data = {
         embeds: [{
-           title: `**Reporte Tickets Draking**`,
+           title: `**Reporte Nene 2.0**`,
            fields: [
             { name: `🪪 • Nombre:`, value: `${nombre}` },
             { name: `📧 • Correo:`, value: `${correo}` },
