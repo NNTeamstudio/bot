@@ -728,6 +728,352 @@ redes a:hover{
         </p>
       </div>
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="7GAOVFbm-xy-cIUkgHkLgY_PjhVUIQlkFUtSVZ38BiA" />
+    <link rel="stylesheet" href="style.css">
+    <title>Guía Nene 2.0</title>
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, black, grey);
+}
+
+header {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: 700;
+    font-size: 25px;
+    color: aqua;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 35px;
+    color: white;
+    border-radius: 15px;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    background: linear-gradient(90deg, red 0%, aqua 100%);
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}        
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 150px 50px 0px 0px;
+}
+
+.content h1 {
+    color: aqua;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.content p {
+    font-weight: 600;
+    margin-top: 25px;
+    color: white;
+    font-size: 20px;
+}
+
+.guias {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 120px 0px;
+    display: block;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.guia {
+    padding: 25px 35px;
+    margin: 0px 10px;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, black, grey);
+    border-radius: 40px;
+}
+
+.guia h3 {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 15px 25px;
+    background:  black;
+    border-radius: 25px;
+}
+
+.guias img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 700px;
+    height: auto;
+    margin-bottom: 25px;
+    border-radius: 15px;
+}
+
+
+        \\ boton \\
+.bts {
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    padding: 15px 25px;
+    background: linear-gradient(90deg, aqua 0%, black 100%);
+    border-radius: 25px;
+    color: white;
+}
+.bts:hover {
+    background: linear-gradient(90deg, black 0%, aqua 100%);
+}
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(31, 30, 30);
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        margin: 10px;
+        padding: 15px 35px;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    header {
+        height: 0vh;
+        padding: 400px 0px 340px 0px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .content h1 {
+        margin-top: 0;
+    } 
+
+    .content p {
+        margin-top: 15px;
+    
+    }
+
+    .btn-1 {
+        margin-top: 15px;
+    }
+
+    .header-content img {
+        margin-top: 45px;
+        width: 200px;
+    }
+
+    .guias {
+        flex-direction: column;
+        padding: 30px 30px 0px 30px;
+    }
+
+    .guia {
+        margin-bottom: 30px;
+    }
+
+    
+
+
+    footer {
+        padding: 30px;
+    }
+
+    .enlaces {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .enlace {
+        flex-direction: column;
+    }
+
+    footer {
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: absolut;
+    width: 100%
+    }
+
+        }
+        @media screen and (max-width:980px){
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+    }
+        
+    </style>
+</head>
+<body>
+    <header>
+        
+        <div class="menu container">
+            <a href="http://www.youtube.com/@JhonierDev" class="logo">Nene 2.0</a>
+            <input type="checkbox" id="menu">
+            <label for="menu">
+               <img src="menu-btn2.png" alt="" class="menu-icono">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="guia.html">Guía</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="tos.html">ToS</a></li>
+                    <li><a href="pdp.html">Políticas</a></li>
+                    <li><a href="reporte.html">Reportar</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+
+            <div class="content">
+                <h1>Guía Para Utilizar y Configurar a Nene 2.0</h1>
+                <p>
+                    Guía de configuración y uso de Nene 2.0 en tu servidor. Para que Nene 2.0 funcione correctamente, te recomendamos seguir estos pasos esenciales.
+                </p>
+            </div>
+
+            <img src="logo.jpeg" alt="">
+        </div>
+
+    </header>
+
+    <main class="guias container">
+
+      <div class="guia">
+        <h3>Primer Paso.</h3>
+        <p>
+            Invita al bot a través de la <a href="https://discord.com/oauth2/authorize?client_id=1181831408889630790&scope=bot%20applications.commands&permissions=0">invitación oficial</a> y mantén los permisos predeterminados, ya que cualquier modificación podría afectar su funcionamiento óptimo.
+        </p> 
+      </div>
+
+      <div class="guia">
+        <h3>Segundo Paso.</h3>
+        <p>
+           Después del primer paso, asegúrate de colocar el rol del bot en la posición más alta para garantizar su funcionamiento óptimo y evitar posibles errores.
+        </p>
+      </div>
+
+      <div class="guia">
+        <h3>Tercer Paso.</h3>
+        <p>
+            ¡Listo! Después del segundo paso, ejecuta /help o .help para explorar los comandos y categorías de Nene 2.0. Con estas herramientas, podrás gestionar y animar tu comunidad de Discord de manera sencilla y efectiva. Nene 2.0 te brinda una variedad de sistemas y comandos para hacer de tu servidor un lugar divertido y organizado.
+        </p>
+      </div>
+  
+      <div class="guia">
+        <h3>¡Nota!</h3>
+        <p>
+    Una vez que hayas completado todos los pasos, te recomendamos no modificar los permisos del bot, ya que esto podría afectar su funcionamiento adecuado.
+
+        </p>
+      </div>
+
     </main>
 
         </div>
@@ -739,7 +1085,7 @@ redes a:hover{
         <div class="container">
 
             <div class="enlaces">
-                <h3>Crea, Explora & Perzonaliza tu servidor.</h3>
+                <h3> &copy Derechos reservados Nene 2.0 2024</h3>
                 <div class="enlace">
                 </div>
             </div>
@@ -751,4 +1097,4 @@ redes a:hover{
     <script src="script.js"></script>
 
 </body>
-    </html>
+</html
